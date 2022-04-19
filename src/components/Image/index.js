@@ -6,7 +6,7 @@ const Image = (props) => {
     return (
         <>
                 <img src={props.imgsrc} alt={props.label} />
-                <label for={props.id}>{props.label}</label>
+                <label htmlFor={props.id}>{props.label}</label>
         </>
     );
     }   

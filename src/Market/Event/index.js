@@ -1,25 +1,23 @@
 import React from 'react';
-import Text from '../../components/input/Text';
-import Textbox from '../../components/input/Textbox';
-import Number from '../../components/input/Number';
+import Textline from '../../components/Text';
+import NumLine from '../../components/NumLine';
 import Image from '../../components/Image';
+import '../Market.css';
 
 const imgurl="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=50&q=80"
 
 
 const Event = (props) => {
     return (
-        <>
-        <div id="eventContainer">
+        <div className="eventContainer">
             <h3 id="eventName">{props.first}</h3>
-            <Image id="m-image" label="Event Image" placeholder='Image URL' imgsrc={imgurl} />
-            <Text id="m-name" label="Event Name" placeholder='Kitty Concert' />
-            </div>
+            <Image id="m-image" placeholder='Image URL' imgsrc={imgurl} />
+            <Textline id="m-name" text='Kitty Concert' />
             <div id="mintContainer">
-            <Number id="m-remaining" label="Remaining Tokens" placeholder='50/50 Tokens Remaining' />
-            <Textbox id='m-metadata' label='Additional Event Metadata' value='This is where the metadata will go' />
+            <NumLine id="m-remaining" label="Remaining Tokens" placeholder='50/50 Tokens Remaining' />
+            <NumLine id="m-price" label="Token Price" placeholder='21 Matic' />
         </div>
-        </>
+        </div>
     );
     }   
 
