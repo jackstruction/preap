@@ -1,0 +1,88 @@
+.Button{
+    display: inline-block;
+    padding: 0.5em 1em;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background: #eee;
+    color: #333;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+}
+.Button:hover{
+    background: #ddd;
+}
+.Button:active{
+    background: #ccc;
+}
+.Button:focus{
+    outline: none;
+}
+.Button:disabled{
+    background: #eee;
+    color: #aaa;
+    cursor: default;
+}
+.Button:disabled:hover{
+    background: #eee;
+}
+.Button:disabled:active{
+    background: #eee;
+}
+.Button:disabled:focus{
+    background: #eee;
+}
+.Button--primary{
+    background: #0074d9;
+    color: #fff;
+}
+.Button--primary:hover{
+    background: #0061b3;
+}
+.Button--primary:active{
+    background: #004981;
+}
+.Button--primary:focus{
+    background: #004981;
+}
+.Button--primary:disabled{
+    background: #0074d9;
+    color: #fff;
+}
+.Button--primary:disabled:hover{
+    background: #0061b3;
+}
+.Button--primary:disabled:active{
+    background: #004981;
+}
+.Button--primary:disabled:focus{
+    background: #004981;
+}
+.Button--secondary{
+    background: #aaa;
+    color: #fff;
+}
+.Button--secondary:hover{
+    background: #999;
+}
+.Button--secondary:active{
+    background: #888;
+}
+.Button--secondary:focus{
+    background: #888;
+}
+.Button--secondary:disabled{
+    background: #aaa;
+    color: #fff;
+}
+.Button--secondary:disabled:hover{
+    background: #999;
+}
+.Button--secondary:disabled:active{
+    background: #888;
+}
+.Button--secondary:disabled:focus{
+    background: #888;
+}

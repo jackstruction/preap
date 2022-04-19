@@ -1,23 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import WalletBar from './components/WalletBar';
+import Header from './components/Header';
+import Mint from './Mint';
+import Market from './Market';
+import Admin from './Admin';
+import Scan from './Scan';
+
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <WalletBar />
+        <Header />
       </header>
+      <main className="App-main">
+      <Mint />
+      <Market />
+      <Scan />
+      <Admin />
+        </main>
     </div>
   );
 }
